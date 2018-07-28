@@ -43,7 +43,9 @@ config.bundle['angular-trumbowyg'] = {
         .pipe(() => {
           return gif(isHtmlFile, templateCache({
             transformUrl: url => {
-              const filename = path.relative(`${__dirname}/src`, `${url.substr(0, url.length - 4)}.html`);
+              let urls = url.split('/');
+              url = urls.slice(__dirname.split(path.sep).length).join('/');
+              const filename = path.relative(`${__dirname}/src`, `${url.substr(0, url.length - 5)}.html`);
               return `${MODULE_NAME}/${filename}`;
             },
             module: MODULE_NAME
