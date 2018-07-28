@@ -82,7 +82,7 @@ angular.module('trumbowyg').component('trumbowyg', {
       }
 
       if (changes.ngDisabled) {
-        _this.trumbowyg(_this.ngDisabled ? 'disable' : 'enable');
+        element.trumbowyg(_this.ngDisabled ? 'disable' : 'enable');
       }
 
       if (changes.placeholder) {
@@ -101,6 +101,6 @@ angular.module('trumbowyg').component('trumbowyg', {
 'use strict';
 
 angular.module('trumbowyg').run(['$templateCache', function ($templateCache) {
-  $templateCache.put('trumbowyg/components/trumbowyg/trumbowyg.html', '<style media="screen">\n  trumbowyg {\n    display: block;\n  }\n</style>\n<div></div>\n');
+  $templateCache.put('trumbowyg/../../../syncrospace/angular-trumbowyg/src/components/trumbowyg/trumbowyg..html', '<style media="screen">\n  trumbowyg {\n    display: block;\n  }\n</style>\n<div></div>\n');
 }]);
 //# sourceMappingURL=angular-trumbowyg.js.map

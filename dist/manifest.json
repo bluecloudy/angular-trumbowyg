@@ -1,8 +1,8 @@
 {
   "angular-trumbowyg": {
-    "scripts": "/angular-trumbowyg.js"
+    "scripts": "angular-trumbowyg.js"
   },
   "angular-trumbowyg.min": {
-    "scripts": "/angular-trumbowyg.min.js"
+    "scripts": "angular-trumbowyg.min.js"
   }
 }
